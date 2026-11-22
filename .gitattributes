@@ -1,0 +1,29 @@
+# 统一换行符处理：文本文件在仓库内一律以 LF 存储，检出时按平台转换
+* text=auto
+
+# ---- 二进制文件：禁止换行转换、禁止文本合并 ----
+# PDF 曾被 git 误判为文本（见提交 d59db46），在 autocrlf=true 的环境下
+# 有被 CRLF 转换损坏的风险，这里显式标记为 binary，一劳永逸。
+*.pdf   binary
+*.doc   binary
+*.docx  binary
+*.xls   binary
+*.xlsx  binary
+*.ppt   binary
+*.pptx  binary
+
+# ---- 图片 ----
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.bmp   binary
+*.ico   binary
+*.webp  binary
+
+# ---- 压缩包 ----
+*.zip   binary
+*.rar   binary
+*.7z    binary
+*.tar   binary
+*.gz    binary

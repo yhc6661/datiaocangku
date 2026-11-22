@@ -1,5 +1,33 @@
+# ---- Python ----
 __pycache__/
 *.py[cod]
 .venv/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# ---- 编辑器 / IDE ----
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Windows 系统文件 ----
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---- Office 打开文件时生成的临时文件 ----
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
+
+# ---- 日志与临时文件 ----
 *.log
+*.tmp
+*.bak
